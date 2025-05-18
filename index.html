@@ -115,7 +115,7 @@
       return;
     }
 
-    // 2. Validar que el teléfono contenga solo números (puede incluir espacio o guiones si querés)
+    // 2. Validar que el teléfono contenga solo números (puede incluir espacio o guiones)
     if (!/^\d{6,15}$/.test(telefono)) {
       alert('El teléfono debe contener solo números (mínimo 6 dígitos).');
       e.preventDefault();
@@ -136,8 +136,6 @@
       e.preventDefault();
       return;
     }
-
-    // Si todo está bien, se permite el envío del formulario
   });
 </script>
 
